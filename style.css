@@ -1,0 +1,95 @@
+body {
+  position: relative;
+}
+div {
+  width: 100px;
+  height: 100px;
+}
+
+.one {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red;
+  animation: one 1.5s forwards;
+}
+.two {
+  position: absolute;
+  top: 0px;
+  left: 100px;
+  background-color: green;
+  animation: two 1.5s forwards;
+}
+.three {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  background-color: blue;
+  animation: three 1.5s forwards;
+}
+.four {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  background-color: yellow;
+  animation: four 1.5s forwards;
+}
+
+@keyframes one {
+  from {
+    top: 0;
+    left: 0;
+  }
+  50% {
+    left: 0;
+  }
+  75% {
+    left: 0;
+  }
+  100% {
+    top: 100px;
+    left: 100px;
+  }
+}
+@keyframes two {
+  from {
+    top: 0;
+    left: 100px;
+  }
+
+  50% {
+    left: 0;
+  }
+  100% {
+    top: 100px;
+    left: 0;
+  }
+}
+@keyframes four {
+  from {
+    top: 100px;
+    left: 100px;
+  }
+
+  100% {
+    top: 0;
+    left: 0px;
+  }
+}
+@keyframes three {
+  from {
+    top: 100px;
+    left: 0;
+  }
+  50% {
+    top: 0;
+    left: 0px;
+  }
+  75% {
+    left: 0;
+  }
+  100% {
+    top: 0px;
+    left: 100px;
+  }
+}
